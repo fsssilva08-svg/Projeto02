@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Manufacturing+Consent&family=MedievalSharp&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
     <link rel="stylesheet" type="text/css" href="css/all.min.css"> 
 </head>
 <body>
@@ -36,13 +36,13 @@
             </a>
         </li>
         
-        <li><a href="#">
-            <i class="fa fa-envelope"></i>Contato
+        <li><a href="contatos.html" title="contatos">
+            <i class="fa fa-envelope"></i>Contatos
         </a>
     </li>
     
     <li>
-        <a href="#">
+        <a href="galeria.html" title="Galeria de fotos">
            <i class="fa fa-camera-retro"></i>Galeria de fotos
        </a>
        <li>
@@ -69,39 +69,57 @@
         </main>
               
 
-<div class="bloco-principal">
-    <section class="descricao"> 
-        <h1>Draco flora </h1>
-        <p> Conheca um mundo onde havia paz e prosperidade de todas as raças 
-            mas um dia destruição deixou sua marca mais profunda, onde somente 
-            os mais forets sobrevivem nesse universo! 
-            A muito tempo atrás Draco flora era uma terra de paz e repleto de maravilhas! Até checar a grande besta despertar
-            de seu descanso eterno e trazendo o caos total a está terra! 
-            Sua destruição foi corrosiva e brutal, deixando toda Draco flora afetada e a beira da destruição!
-            Em um ato de desespero todos as regioes antes divididas de Draco flora se uniram para enfrentar esse mal!
-            Agora a ultima esperança de Draco flora está em suas mãos! 
-            Você deverá Ajudar os herois de cada região a checar em seus objetivos para que possam concluir suas missoes!
-            E vencerem a grande besta
-        </p>
+<section>
+        <h1>Draco flora <i class="fa fa-envelope"></i></h1>
         
+            <h2>Faça sua conta</h2>
+            <form name="Cadrastro" method="get" action="#">
+               <label nome="NomeCompleto">Escreva seu nome</label>
+                    <input type="text" name="nome" id="nome" size="50" maxlength="40"
+                     placeholder="Nome Completo" autocomplete="off" required class="formulario">
+                
+
+                <br>
+                <br>
+
+            <label> Escreva seu Email </label>
+                <input type="Email" name="email" id="email"
+                maxlength="50" placeholder="Escreva seu email" autocomplete="off" required class="formulario">
+           
+                <br>
+                <br>
+
+                <label for="genero">Selecione Qual Classe você quer?</label>
+                <br>
+                <br>
+                <input type="radio" name="genero" value="F"> Fada
+                <input type="radio" name="genero" value="D"> Dragão
+                <input type="radio" name="genero" value="N"> Necromante 
+                <input type="radio" name="genero" value="HP">Homem planta
+                <input type="radio" name="genero" value="D"> Demonio 
+                
+                <br>
+
+                <br>
+
+            <label> Entre em contato por aqui </label>
+            <br>
+                <textarea name="Mensagem" id="Mensagem" required placeholder="Digite sua Mensagem" class="formulario"
+                           rows="10" >
+                    
+                </textarea> 
+
+                <br>
+                <br>
+
+                <button type="submit" class="btn-submit">Enviar dados</button> <!--botão para enviar dados-->
+                <button type="reset" class="btn-reset">Redefinir</button><!--botão para redefinir-->  
+            </form>
     </section>
-    
-    
-    <aside class="esqueleto">
-        <div class="esqueleto-container">
-            <h1>Draco flora</h1>
-                <p>
-                    conheça um mundo de magias
-                </p>
-                <div class="esqueleto-image"> 
-                    <img src="imagens/esqueleto.gif" alt="esqueleto">
-                </div>
-            
-        </div>
-    </aside>
 
-</div> 
-
+<aside>
+    <p></p>
+</aside>
 <footer>
 
     <h1>Draco flora</h1>

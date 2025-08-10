@@ -1,86 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
- font-family: arial, MedievalSharp;
- margin: 0px;
+   
+    font-family: 'MedievalSharp', cursive;
+
 }
-header {
-	width: 100%;
-	background: black; /*cor de fundo*/
-	padding: 5px 0px; /*preenchimento*/
-	box-sizing: border-box; /*corrigir barra de rolagens*/
-	position: flex; /*posição fixa */
-	top: 0; /*distancia de cima*/
+
+/* Header fixo com logo e links lado a lado */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
-.arvore {
-	width: 120px;
+li a:Hover {
+        background: red;
+         transition: all 0.5s;
 }
-header nav {
-	float: right; /*flutuar a direita*/ 
-	margin: 5px; /*margem*/
-}
-header nav ul {
-	list-style: none; /*tirar sublinhado dos links*/
-}
-header nav ul li {
-	display: inline-block; /*exibir em horizontal*/
-	margin: 20px; /*margem */
-}
-header nav ul li a {
-	text-decoration: none; /*tirar o sombriado dos links no site*/
-	color: #FFF; /* cor do texto */
-	font-weight: 800; /*especura da fonte*/
-}
-.icone-bar {
-	margin-top: 15px;
-	padding: 1px 2px;
-}
+/* Logo */
 .logo {
-    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 70px; /* ajuste conforme necessário */
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none; /**/
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links i {
+    margin-right: 5px;
 }
 
 
+/* Para evitar que o conteúdo fique escondido atrás do header */
+main {
+    padding-top: 90px;
+    text-align: center;
+    align-items: center;
+  
 }
-.formulario {
-	width: 100%; /*largura*/
-	padding: 15px; /*preenchimento*/
-	box-sizing: border-box; /*ajustar tamanho da tela*/
-	border-radius: 10px; /*arredondar bordas*/
-	border: 1px solid grey; /*adicionar borda - solida - cor */
-
-	background: #90EE90; /*cor de fundp*/
+footer {
+    
+    background-color: black;
+    margin-top: 10PX;
+    margin-bottom: 0px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px;
+}
+.naim {
+    display: flex;
+}
+.esquerda {
+    width: 380px;
+    margin-left: 
+    margin: auto;
 
 }
-.formulario:focus { /*para focar no campo selecionado*/
-	background: #ADD8E6;
+.direita {
+    margin: auto
+}
+/*
+.esquerda, .direita { 
+    margin:auto;
+}
+*/
+main p {
+    margin: auto;
+      font-size: 40px;
 }
 
-label, .formulario { /*formulario dentro da label*/
-	margin: 10px 0; /*margem*/
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background:#ba9fe0;
+    color: black;
+    transition: white 0.4s ease-in-out;
+}
+input[type=texte]:focus {
+width: 100%;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #fa6055; 
+    color: black;
+    margin:10px 130px;
+    resize: none;
+}
+input[type=email] {
+    
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #ba9fe0;
+    color: black;
+}
+input[type=radio] {
+    margin: 0px 10px;
+    text-align: center;
+    padding: 10px;
 }
 .btn-submit {
-	background: green; /*cor de fundo do botão*/
+    background: green; /*cor de fundo do botão*/
 }
 
 .btn-reset {
-	background: red; /*cor de fundo do botão*/	
+    background: red; /*cor de fundo do botão*/  
 }
 
 button:Hover {
-	color: white; /*ao passar o mouse muda de cor*/
-		
+    color: white; /*ao passar o mouse muda de cor*/
+        
 }
-
-
 
 .btn-submit,.btn-reset {
-	margin: 10px; /*margem*/
-	padding: 15px 15px; /*prenchimento*/
-	font-weight: bolder; /*encorpar texto*/
-	border-radius: 5px; /*arrendodar as bordas*/
-	border: none; /*tirar as bordas*/
-	
+    margin: 20px 30px; /*margem*/
+    padding: 15px 15px; /*prenchimento*/
+    font-weight: bolder; /*encorpar texto*/
+    border-radius: 5px; /*arrendodar as bordas*/
+    border: none; /*tirar as bordas*/
 }
+ 
 
-label {
-	font-weight: bold; /*fonte mais grossa*/ 
+footer h1 {
+    color: white;
+
+
 }
+footer a {
+    background: black ; /*cor de fundo*/
+    text-decoration: none; /*sem linhas de baixo*/
+    margin: 20px; /*margem */
+    color: white; /*cor do  texto*/
+    width: 30px; /*largura*/
+    height: 30px; /*altura*/
+    display: inline-block; /*exibição em horizontal */
+    line-height: 30px; /* -altura da linha- mesmo tamanho da altura*/
+    transition: all 0.5s;
+}
+footer a:Hover {
+    background: white; /*cor dw fundo*/
+    color: red; /*cor do texto*/

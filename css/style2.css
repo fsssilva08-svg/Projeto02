@@ -1,39 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
- font-family: arial, MedievalSharp;
- margin: 0px;
+   
+    font-family: 'MedievalSharp', cursive;
+
 }
-header {
-	width: 100%;
-	background: black; /*cor de fundo*/
-	padding: 5px 0px; /*preenchimento*/
-	box-sizing: border-box; /*corrigir barra de rolagens*/
-	position: flex; /*posição fixa */
-	top: 0; /*distancia de cima*/
+
+/* Header fixo com logo e links lado a lado */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
-.arvore {
-	width: 120px;
+li a:Hover {
+        background: red;
+         transition: all 0.5s;
 }
-header nav {
-	float: right; /*flutuar a direita*/ 
-	margin: 5px; /*margem*/
-}
-header nav ul {
-	list-style: none; /*tirar sublinhado dos links*/
-}
-header nav ul li {
-	display: inline-block; /*exibir em horizontal*/
-	margin: 20px; /*margem */
-}
-header nav ul li a {
-	text-decoration: none; /*tirar o sombriado dos links no site*/
-	color: #FFF; /* cor do texto */
-	font-weight: 800; /*especura da fonte*/
-}
-.icone-bar {
-	margin-top: 15px;
-	padding: 1px 2px;
-}
+/* Logo */
 .logo {
-    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.logo img {
+    height: 70px; /* ajuste conforme necessário */
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none; /**/
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links i {
+    margin-right: 5px;
+}
+
+
+/* Para evitar que o conteúdo fique escondido atrás do header */
+main {
+    padding-top: 90px;
+    text-align: center;
+    align-items: center;
+  
+}
+footer {
+    
+    background-color: black;
+    margin-top: 10PX;
+    margin-bottom: 0px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 20px 0px;
+}
+.naim {
+    display: flex;
+}
+.esquerda {
+    width: 380px;
+    margin-left: 
+    margin: auto;
+
+}
+.direita {
+    margin: auto
+}
+/*
+.esquerda, .direita { 
+    margin:auto;
+}
+*/
+main p {
+    margin: auto;
+      font-size: 40px;
+}
+.grid { /*css na grid*/
+    display: grid; /*exbição do tipo grade*/
+    grid-template-columns:repeat(3, 1fr); /*quantidade de grades*/
+    max-width: 1200px; /*largura maxima*/
+    margin-top: 40px; /*margem topo*/
+    margin: auto;
+} 
+.grid .coluna img { /*formatação da grid da coluna e da imagem*/
+    width: 90%; /*largura de 100% dentro dos 33%*/
+}
+.grid .coluna {
+    text-align: center; /*texto alinhado para o centro*/
+    border: 2px solid grey; /*-bordas-solidas e cor*/
+    border-radius: 10px; /*arredondar as bordas em 10 pixeis*/
+    margin: 35px; /*Margem*/
+}
+.coluna img, p, .btn {
+    margin: 10px 10px;
+}
+
+
+.btn {
+    border: 2px solid #ba9fe0;
+    padding: 5px 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    background: #ba9fe0;
+    color: white;
+    font-weight: 10%;
+}
+.btn:hover { /*quando passar o mouse em cima o fundo vai ficar vermelho e o texto fica amarelo*/
+    background: black; /*cor de fundo*/
+    color: #ba9fe0;  /*cor do texto*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer h1 {
+    color: white;
+}
+footer a {
+    background: black ; /*cor de fundo*/
+    text-decoration: none; /*sem linhas de baixo*/
+    margin: 20px; /*margem */
+    color: white; /*cor do  texto*/
+    width: 30px; /*largura*/
+    height: 30px; /*altura*/
+    display: inline-block; /*exibição em horizontal */
+    line-height: 30px; /* -altura da linha- mesmo tamanho da altura*/
+    transition: all 0.5s;
+}
+footer a:Hover {
+    background: white; /*cor dw fundo*/
+    color: red; /*cor do texto*/
+}
+
 

@@ -1,0 +1,86 @@
+
+body {
+ font-family: arial, MedievalSharp;
+ margin: 0px;
+}
+header {
+	width: 100%;
+	background: black; /*cor de fundo*/
+	padding: 5px 0px; /*preenchimento*/
+	box-sizing: border-box; /*corrigir barra de rolagens*/
+	position: flex; /*posição fixa */
+	top: 0; /*distancia de cima*/
+}
+.arvore {
+	width: 120px;
+}
+header nav {
+	float: right; /*flutuar a direita*/ 
+	margin: 5px; /*margem*/
+}
+header nav ul {
+	list-style: none; /*tirar sublinhado dos links*/
+}
+header nav ul li {
+	display: inline-block; /*exibir em horizontal*/
+	margin: 20px; /*margem */
+}
+header nav ul li a {
+	text-decoration: none; /*tirar o sombriado dos links no site*/
+	color: #FFF; /* cor do texto */
+	font-weight: 800; /*especura da fonte*/
+}
+.icone-bar {
+	margin-top: 15px;
+	padding: 1px 2px;
+}
+.logo {
+    width: 500px;
+}
+
+
+}
+.formulario {
+	width: 100%; /*largura*/
+	padding: 15px; /*preenchimento*/
+	box-sizing: border-box; /*ajustar tamanho da tela*/
+	border-radius: 10px; /*arredondar bordas*/
+	border: 1px solid grey; /*adicionar borda - solida - cor */
+
+	background: #90EE90; /*cor de fundp*/
+
+}
+.formulario:focus { /*para focar no campo selecionado*/
+	background: #ADD8E6;
+}
+
+label, .formulario { /*formulario dentro da label*/
+	margin: 10px 0; /*margem*/
+}
+.btn-submit {
+	background: green; /*cor de fundo do botão*/
+}
+
+.btn-reset {
+	background: red; /*cor de fundo do botão*/	
+}
+
+button:Hover {
+	color: white; /*ao passar o mouse muda de cor*/
+		
+}
+
+
+
+.btn-submit,.btn-reset {
+	margin: 10px; /*margem*/
+	padding: 15px 15px; /*prenchimento*/
+	font-weight: bolder; /*encorpar texto*/
+	border-radius: 5px; /*arrendodar as bordas*/
+	border: none; /*tirar as bordas*/
+	
+}
+
+label {
+	font-weight: bold; /*fonte mais grossa*/ 
+}
