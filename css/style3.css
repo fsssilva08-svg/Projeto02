@@ -57,7 +57,12 @@ li a:Hover {
 .nav-links i {
     margin-right: 5px;
 }
-
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
 
 /* Para evitar que o conteúdo fique escondido atrás do header */
 main {
@@ -180,3 +185,48 @@ footer a {
 footer a:Hover {
     background: white; /*cor dw fundo*/
     color: red; /*cor do texto*/
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /*"sumir"*/
+        flex-direction: column; /*direção em coluna*/
+        background-color: black; /*cor de fundo*/
+        position: absolute; /*posição*/
+        top: 60px; /*topo*/
+        right: 10px; /*direita*/
+        width: 200px; /*largura*/
+        padding: 10px; /*preenchimento*/
+        border: 1px solid #fff; /*borda/solida/cor*/
+        z-index: 1000; /*deixa na frete*/
+    }
+    .menu-toggle {
+        display: block; /*fazer o botão aparecer*/
+        margin-right: 20px;
+    }
+     .nav-links.active {
+        display: flex; 
+    }
+    .logo img {
+        height: 65px;
+    }
+        .esqueleto {
+            display: none; /*sumir*/
+        }
+        .esquerda, .direita {
+            display: none; /*sumir*/
+        }
+        .btn-submit,.btn-reset {
+    margin: 10px 20px; /*margem*/
+    padding: 15px 15px; /*prenchimento*/
+    font-weight: bolder; /*encorpar texto*/
+    border-radius: 5px; /*arrendodar as bordas*/
+    border: none; /*tirar as bordas*/
+}
+    textarea {
+        margin: 0px;
+    }
+    input[type=radio] {
+        margin: 0px;
+    }
+}

@@ -15,7 +15,6 @@
 </head>
 <body>
  <header> 
-    
    <nav class="nav-bar">
     <div class="logo">
         <a href="index.html" title="Voltar ao inicio">
@@ -23,6 +22,7 @@
             <img src="imagens/arvore.gif" alt="logo-arvore">
         </a>
     </div>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
     <ul class="nav-links">
         <li>
             <a href="index.html" title="Home">
@@ -72,6 +72,7 @@
 
 <div class="bloco-principal">
     <section class="descricao"> 
+        <h1>Thanor, Senhor dos Ossos</h1>
         <p>
             Thanor, o Senhor dos Ossos
 
@@ -125,6 +126,14 @@ Para Thanor, a Grande Besta não passará de mais um prisioneiro — o maior de 
                 </a>
         </p>
  </footer>
-    
+
+
+     <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
+
 </html>

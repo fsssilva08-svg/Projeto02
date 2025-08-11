@@ -58,6 +58,12 @@ li a:Hover {
     margin-right: 5px;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
 
 /* Para evitar que o conteúdo fique escondido atrás do header */
 main {
@@ -132,22 +138,6 @@ main p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer h1 {
     color: white;
 }
@@ -166,5 +156,39 @@ footer a:Hover {
     background: white; /*cor dw fundo*/
     color: red; /*cor do texto*/
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /*"sumir"*/
+        flex-direction: column; /*direção em coluna*/
+        background-color: black; /*cor de fundo*/
+        position: absolute; /*posição*/
+        top: 61px; /*topo*/
+        right: 12px; /*direita*/
+        width: 201px; /*largura*/
+        padding: 13px; /*preenchimento*/
+        border: 2px solid #fff; /*borda/solida/cor*/
+        z-index: 1000; /*deixa na frete*/
+    }
+    .menu-toggle {
+        display: block; /*fazer o botão aparecer*/
+    }
+     .nav-links.active {
+        display: flex; 
+    }
+        .esqueleto {
+            display: none; /*sumir*/
+        }
+        .esquerda, .direita {
+            display: none; /*sumir*/
+        }
+
+    .grid {
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+    }    
+}
+
+
 
 

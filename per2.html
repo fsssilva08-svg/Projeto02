@@ -23,7 +23,9 @@
             <img src="imagens/arvore.gif" alt="logo-arvore">
         </a>
     </div>
+     <div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
     <ul class="nav-links">
+
         <li>
             <a href="index.html" title="Home">
                 <i class="fas fa-home"></i>Home
@@ -73,6 +75,7 @@
 
 <div class="bloco-principal">
     <section class="descricao"> 
+        <h1>Kakito - A flor solar</h1>
         <p>
             "Kakito, irmão mais novo de Flupy, após Draco Flora ser atacada pela grande besta,  No caos da destruição, foi separado de seu irmão. Desde esse dia, está à procura dele para reatar os laços e se unirem novamente como família!
         Kakito possui a bênção do Sol, sendo capaz de curar seus aliados. Mas não se engane: é uma magia tão poderosa que poderá ajudar a combater a grande besta."
@@ -115,6 +118,11 @@
                 </a>
         </p>
  </footer>
-    
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

@@ -23,6 +23,7 @@
             <img src="imagens/arvore.gif" alt="logo-arvore">
         </a>
     </div>
+     <div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
     <ul class="nav-links">
         <li>
             <a href="index.html" title="Home">
@@ -72,6 +73,7 @@
 
 <div class="bloco-principal">
     <section class="descricao"> 
+        <h1>Flupy</h1>
         <p> Flupy uma Criatura mistica das floresta central, enviado por sua tribo para ajudar aprisionar a grande besta!
          sua aparencia pode ser simples entretando é expecialista da magia de mimica! sendo capaz de copiar as habilidades de seus inimigos, além de ter uma conexão com a floresta sendo capaz de manipular tal elemente a seu favor!  mas o que torna o guereirro de sua tribo é a seu segredo! guarda em suas raízes uma semente lendária capaz de germinar uma árvore que aprisionará a Grande Besta para sempre.
         </p>
@@ -114,6 +116,11 @@
                 </a>
         </p>
  </footer>
-    
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

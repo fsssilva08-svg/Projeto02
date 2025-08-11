@@ -23,6 +23,7 @@
             <img src="imagens/arvore.gif" alt="logo-arvore">
         </a>
     </div>
+ <div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
     <ul class="nav-links">
         <li>
             <a href="index.html" title="Home">
@@ -75,6 +76,7 @@
 
 <div class="bloco-principal">
     <section class="descricao"> 
+        <h1>Lyriel - A pequena Grandiã </h1>
         <p>
          Em Draco Flora existe uma grande cachoeira, onde a água ruge com a força de mil tempestades e mantém o fluxo da magia por séculos, sendo distribuída para todas as criaturas existentes dessa terra! Quando a corrosão da Grande Besta envenenou a pureza das águas, Lyriel despertou!
          A pequena guardiã entra em ação, não podendo deixar o equilíbrio ser quebrado!
@@ -119,6 +121,12 @@
                 </a>
         </p>
  </footer>
-    
+ 
+     <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

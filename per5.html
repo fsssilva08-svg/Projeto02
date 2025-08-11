@@ -23,6 +23,7 @@
             <img src="imagens/arvore.gif" alt="logo-arvore">
         </a>
     </div>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
     <ul class="nav-links">
         <li>
             <a href="index.html" title="Home">
@@ -72,6 +73,7 @@
 
 <div class="bloco-principal">
     <section class="descricao"> 
+        <h1>Baldrak </h1>
         <p>
             Baldrak 
             O ultimo meio-Dragão 
@@ -119,6 +121,12 @@
                 </a>
         </p>
  </footer>
-    
+
+     <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
