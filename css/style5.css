@@ -186,8 +186,7 @@ footer a:Hover {
       .esquerda, .direita {
             display: none; /*sumir*/
         }
-     .logo img {
-        display: none;
+     
   }
         
 @media (max-width: 400px) {
