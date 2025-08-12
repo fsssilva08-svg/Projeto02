@@ -7,49 +7,49 @@
 
 body {
    
-    font-family: 'MedievalSharp', cursive;
+    font-family: 'MedievalSharp', cursive, arial, Tahoma;
 
 }
 
 /* Header fixo com logo e links lado a lado */
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    padding: 0 20px;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+    display: flex; 
+    align-items: center; /*alinhar itens no centro*/
+    justify-content: space-between; /*justificar*/
+    background-color: black; /*cor de fundo*/
+    padding: 0 20px; /*"preencimento"*/
+    height: 80px; /*altura*/
+    position: fixed; /*posição fixada*/
+    top: 0; /*"margem"topo */
+    width: 100%; /*largura*/
+    z-index: 999; /*manter o elemento na frente*/
 }
 li a:Hover {
-        background: red;
+        background: red; /*configurar o mouse*/
          transition: all 0.5s;
 }
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
+    display: flex; /*configuraçoes da logo */
+    align-items: center; /*alinhar texto*/
     gap: 10px;
 }
 
 .logo img {
-    height: 70px; /* ajuste conforme necessário */
+    height: 70px; /* altura da imagem */
 }
 
 /* Links */
-.nav-links {
+.nav-links { /*configuraçoes da nav-links*/
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
 .nav-links li a {
-    text-decoration: none; /**/
-    color: white;
-    font-weight: bold;
+    text-decoration: none; /*tirar o sublinhado*/
+    color: white; /*cor*/
+    font-weight: bold; /*espessura*/
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ li a:Hover {
     margin-right: 5px;
 }
 
-.menu-toggle {
+.menu-toggle { /*configuração do botão*/
     display: none;
     font-size: 30px;
     color: white;
@@ -129,7 +129,8 @@ main p {
 }
 
 .descricao {
-    max-width: 600px;;
+    max-width: 600px;
+
 }
 
 .descricao h1 {
@@ -139,7 +140,7 @@ main p {
 
 .descricao p {
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 20px;
 }
 footer h1 {
     color: white;
