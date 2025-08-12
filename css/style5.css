@@ -180,11 +180,19 @@ footer a:Hover {
      .nav-links.active {
         display: flex; 
     }
-        .esqueleto {
+     .esqueleto {
             display: none; /*sumir*/
         }
-        .esquerda, .direita {
+      .esquerda, .direita {
             display: none; /*sumir*/
         }
-}
+     .logo img {
+        display: none;
+  }
+        
+@media (max-width: 400px) {
+    .logo img {
+        height: 10px;
+    }
+   }
 

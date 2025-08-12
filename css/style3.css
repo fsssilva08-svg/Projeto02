@@ -230,3 +230,8 @@ footer a:Hover {
         margin: 0px;
     }
 }
+@media (max-width: 400px) {
+    .logo img {
+        height: 50px;
+    }
+   }
